@@ -134,5 +134,6 @@ src/xs/Timeline.xs
 src/xs/Tween.xs
 t/betweener.t
 TODO
+typemap
 META.yml                                 Module YAML meta-data (added by MakeMaker)
 META.json                                Module JSON meta-data (added by MakeMaker)

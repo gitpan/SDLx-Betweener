@@ -540,8 +540,8 @@ clean :: clean_subdirs
 	  core.*perl.*.? $(MAKE_APERL_FILE) \
 	  $(BASEEXT).def perl \
 	  core.[0-9][0-9][0-9] mon.out \
-	  lib$(BASEEXT).def perl.exe \
-	  perlmain.c so_locations \
+	  lib$(BASEEXT).def perlmain.c \
+	  perl.exe so_locations \
 	  $(BASEEXT).exp 
 	- $(RM_RF) \
 	  libbetweener$(LIB_EXT) blib 
