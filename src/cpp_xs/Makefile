@@ -1,7 +1,7 @@
 # This Makefile is for the SDLx::Betweener::betweenerperl extension to perl.
 #
 # It was generated automatically by MakeMaker version
-# 6.6302 (Revision: 66302) from the contents of
+# 6.78 (Revision: 67800) from the contents of
 # Makefile.PL. Don't edit this file, edit Makefile.PL instead.
 #
 #       ANY CHANGES MADE HERE WILL BE LOST!
@@ -20,6 +20,7 @@
 #     NAME => q[SDLx::Betweener::betweenerperl]
 #     PREREQ_PM => {  }
 #     SKIP => [q[all], q[static], q[static_lib], q[dynamic], q[dynamic_lib]]
+#     TEST_REQUIRES => {  }
 #     clean => { FILES=>q[libbetweenerperl$(LIB_EXT)] }
 
 # --- MakeMaker post_initialize section:
@@ -27,30 +28,30 @@
 
 # --- MakeMaker const_config section:
 
-# These definitions are from config.sh (via /usr/lib/perl5/5.16.2/x86_64-linux-thread-multi/Config.pm).
+# These definitions are from config.sh (via /usr/lib/perl5/5.18.1/x86_64-linux-thread-multi/Config.pm).
 # They may have been overridden via Makefile.PL or on the command line.
 AR = ar
 CC = g++
 CCCDLFLAGS = -fPIC
-CCDLFLAGS = -Wl,-E -Wl,-rpath,/usr/lib/perl5/5.16.2/x86_64-linux-thread-multi/CORE
+CCDLFLAGS = -Wl,-E -Wl,-rpath,/usr/lib/perl5/5.18.1/x86_64-linux-thread-multi/CORE
 DLEXT = so
 DLSRC = dl_dlopen.xs
 EXE_EXT = 
-FULL_AR = /bin/ar
+FULL_AR = /usr/bin/ar
 LD = $(CC)
 LDDLFLAGS = -shared -O2 -g -pipe -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector --param=ssp-buffer-size=4 -fPIC -Wl,--as-needed -Wl,-z,relro -Wl,-O1 -Wl,--build-id -Wl,--enable-new-dtags -pthread -L/usr/local/lib64
 LDFLAGS =  -fstack-protector -L/usr/local/lib64
-LIBC = /lib/libc-2.16.so
+LIBC = /lib/libc-2.18.so
 LIB_EXT = .a
 OBJ_EXT = .o
 OSNAME = linux
-OSVERS = 3.3.8-server-2.mga2
+OSVERS = 3.4.52-server-1.mga2
 RANLIB = :
-SITELIBEXP = /usr/lib/perl5/site_perl/5.16.2
-SITEARCHEXP = /usr/lib/perl5/site_perl/5.16.2/x86_64-linux-thread-multi
+SITELIBEXP = /usr/lib/perl5/site_perl/5.18.1
+SITEARCHEXP = /usr/lib/perl5/site_perl/5.18.1/x86_64-linux-thread-multi
 SO = so
-VENDORARCHEXP = /usr/lib/perl5/vendor_perl/5.16.2/x86_64-linux-thread-multi
-VENDORLIBEXP = /usr/lib/perl5/vendor_perl/5.16.2
+VENDORARCHEXP = /usr/lib/perl5/vendor_perl/5.18.1/x86_64-linux-thread-multi
+VENDORLIBEXP = /usr/lib/perl5/vendor_perl/5.18.1
 
 
 # --- MakeMaker constants section:
@@ -80,17 +81,17 @@ PREFIX = $(SITEPREFIX)
 PERLPREFIX = /usr
 SITEPREFIX = /usr
 VENDORPREFIX = /usr
-INSTALLPRIVLIB = /usr/lib/perl5/5.16.2
+INSTALLPRIVLIB = /usr/lib/perl5/5.18.1
 DESTINSTALLPRIVLIB = $(DESTDIR)$(INSTALLPRIVLIB)
-INSTALLSITELIB = /usr/lib/perl5/site_perl/5.16.2
+INSTALLSITELIB = /usr/lib/perl5/site_perl/5.18.1
 DESTINSTALLSITELIB = $(DESTDIR)$(INSTALLSITELIB)
-INSTALLVENDORLIB = /usr/lib/perl5/vendor_perl/5.16.2
+INSTALLVENDORLIB = /usr/lib/perl5/vendor_perl/5.18.1
 DESTINSTALLVENDORLIB = $(DESTDIR)$(INSTALLVENDORLIB)
-INSTALLARCHLIB = /usr/lib/perl5/5.16.2/x86_64-linux-thread-multi
+INSTALLARCHLIB = /usr/lib/perl5/5.18.1/x86_64-linux-thread-multi
 DESTINSTALLARCHLIB = $(DESTDIR)$(INSTALLARCHLIB)
-INSTALLSITEARCH = /usr/lib/perl5/site_perl/5.16.2/x86_64-linux-thread-multi
+INSTALLSITEARCH = /usr/lib/perl5/site_perl/5.18.1/x86_64-linux-thread-multi
 DESTINSTALLSITEARCH = $(DESTDIR)$(INSTALLSITEARCH)
-INSTALLVENDORARCH = /usr/lib/perl5/vendor_perl/5.16.2/x86_64-linux-thread-multi
+INSTALLVENDORARCH = /usr/lib/perl5/vendor_perl/5.18.1/x86_64-linux-thread-multi
 DESTINSTALLVENDORARCH = $(DESTDIR)$(INSTALLVENDORARCH)
 INSTALLBIN = /usr/bin
 DESTINSTALLBIN = $(DESTDIR)$(INSTALLBIN)
@@ -116,16 +117,16 @@ INSTALLSITEMAN3DIR = /usr/local/share/man/man3
 DESTINSTALLSITEMAN3DIR = $(DESTDIR)$(INSTALLSITEMAN3DIR)
 INSTALLVENDORMAN3DIR = /usr/share/man/man3
 DESTINSTALLVENDORMAN3DIR = $(DESTDIR)$(INSTALLVENDORMAN3DIR)
-PERL_LIB = /usr/lib/perl5/5.16.2
-PERL_ARCHLIB = /usr/lib/perl5/5.16.2/x86_64-linux-thread-multi
+PERL_LIB = /usr/lib/perl5/5.18.1
+PERL_ARCHLIB = /usr/lib/perl5/5.18.1/x86_64-linux-thread-multi
 LIBPERL_A = libperl.a
 FIRST_MAKEFILE = Makefile
 MAKEFILE_OLD = Makefile.old
 MAKE_APERL_FILE = Makefile.aperl
 PERLMAINCC = $(CC)
-PERL_INC = /usr/lib/perl5/5.16.2/x86_64-linux-thread-multi/CORE
-PERL = /usr/bin/perl5.16.2
-FULLPERL = /usr/bin/perl5.16.2
+PERL_INC = /usr/lib/perl5/5.18.1/x86_64-linux-thread-multi/CORE
+PERL = /usr/bin/perl5.18.1
+FULLPERL = /usr/bin/perl5.18.1
 ABSPERL = $(PERL)
 PERLRUN = $(PERL)
 FULLPERLRUN = $(FULLPERL)
@@ -138,9 +139,9 @@ PERM_DIR = 755
 PERM_RW = 644
 PERM_RWX = 755
 
-MAKEMAKER   = /usr/lib/perl5/5.16.2/ExtUtils/MakeMaker.pm
-MM_VERSION  = 6.6302
-MM_REVISION = 66302
+MAKEMAKER   = /usr/lib/perl5/vendor_perl/5.18.1/ExtUtils/MakeMaker.pm
+MM_VERSION  = 6.78
+MM_REVISION = 67800
 
 # FULLEXT = Pathname for extension directory (eg Foo/Bar/Oracle).
 # BASEEXT = Basename part of FULLEXT. May be just equal FULLEXT. (eg Oracle)
@@ -213,7 +214,7 @@ PM_TO_BLIB =
 
 
 # --- MakeMaker platform_constants section:
-MM_Unix_VERSION = 6.6302
+MM_Unix_VERSION = 6.78
 PERL_MALLOC_DEF = -DPERL_EXTMALLOC_DEF -Dmalloc=Perl_malloc -Dfree=Perl_mfree -Drealloc=Perl_realloc -Dcalloc=Perl_calloc
 
 
@@ -225,13 +226,13 @@ AUTOSPLITFILE = $(ABSPERLRUN)  -e 'use AutoSplit;  autosplit($$$$ARGV[0], $$$$AR
 
 # --- MakeMaker tool_xsubpp section:
 
-XSUBPPDIR = /usr/lib/perl5/5.16.2/ExtUtils
+XSUBPPDIR = /usr/lib/perl5/5.18.1/ExtUtils
 XSUBPP = $(XSUBPPDIR)$(DFSEP)xsubpp
 XSUBPPRUN = $(PERLRUN) $(XSUBPP)
 XSPROTOARG = 
-XSUBPPDEPS = /usr/lib/perl5/5.16.2/ExtUtils/typemap $(XSUBPP)
-XSUBPPARGS = -typemap /usr/lib/perl5/5.16.2/ExtUtils/typemap
-XSUBPP_EXTRA_ARGS = 
+XSUBPPDEPS = /usr/lib/perl5/5.18.1/ExtUtils/typemap $(XSUBPP)
+XSUBPPARGS = -typemap /usr/lib/perl5/5.18.1/ExtUtils/typemap
+XSUBPP_EXTRA_ARGS =
 
 
 # --- MakeMaker tools_other section:
@@ -492,24 +493,25 @@ clean_subdirs :
 
 clean :: clean_subdirs
 	- $(RM_F) \
-	  *$(LIB_EXT) core \
-	  core.[0-9] $(INST_ARCHAUTODIR)/extralibs.all \
-	  core.[0-9][0-9] $(BASEEXT).bso \
-	  pm_to_blib.ts MYMETA.json \
-	  core.[0-9][0-9][0-9][0-9] MYMETA.yml \
-	  $(BASEEXT).x $(BOOTSTRAP) \
-	  perl$(EXE_EXT) tmon.out \
-	  *$(OBJ_EXT) pm_to_blib \
-	  $(INST_ARCHAUTODIR)/extralibs.ld blibdirs.ts \
-	  core.[0-9][0-9][0-9][0-9][0-9] *perl.core \
-	  core.*perl.*.? $(MAKE_APERL_FILE) \
-	  $(BASEEXT).def perl \
-	  core.[0-9][0-9][0-9] mon.out \
-	  lib$(BASEEXT).def perl.exe \
-	  perlmain.c so_locations \
-	  $(BASEEXT).exp 
+	  $(BASEEXT).bso $(BASEEXT).def \
+	  $(BASEEXT).exp $(BASEEXT).x \
+	  $(BOOTSTRAP) $(INST_ARCHAUTODIR)/extralibs.all \
+	  $(INST_ARCHAUTODIR)/extralibs.ld $(MAKE_APERL_FILE) \
+	  *$(LIB_EXT) *$(OBJ_EXT) \
+	  *perl.core MYMETA.json \
+	  MYMETA.yml blibdirs.ts \
+	  core core.*perl.*.? \
+	  core.[0-9] core.[0-9][0-9] \
+	  core.[0-9][0-9][0-9] core.[0-9][0-9][0-9][0-9] \
+	  core.[0-9][0-9][0-9][0-9][0-9] lib$(BASEEXT).def \
+	  mon.out perl \
+	  perl$(EXE_EXT) perl.exe \
+	  perlmain.c pm_to_blib \
+	  pm_to_blib.ts so_locations \
+	  tmon.out 
 	- $(RM_RF) \
-	  libbetweenerperl$(LIB_EXT) blib 
+	  blib libbetweenerperl$(LIB_EXT) 
+	  $(NOECHO) $(RM_F) $(MAKEFILE_OLD)
 	- $(MV) $(FIRST_MAKEFILE) $(MAKEFILE_OLD) $(DEV_NULL)
 
 
@@ -522,8 +524,8 @@ realclean_subdirs :
 # Delete temporary files (via clean) and also delete dist files
 realclean purge ::  clean realclean_subdirs
 	- $(RM_F) \
-	  $(OBJECT) $(MAKEFILE_OLD) \
-	  $(FIRST_MAKEFILE) 
+	  $(FIRST_MAKEFILE) $(OBJECT) \
+	  $(MAKEFILE_OLD) 
 	- $(RM_RF) \
 	  $(DISTVNAME) 
 
@@ -540,7 +542,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) 'configure_requires:' >> META_new.yml
 	$(NOECHO) $(ECHO) '  ExtUtils::MakeMaker: 0' >> META_new.yml
 	$(NOECHO) $(ECHO) 'dynamic_config: 1' >> META_new.yml
-	$(NOECHO) $(ECHO) 'generated_by: '\''ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921'\''' >> META_new.yml
+	$(NOECHO) $(ECHO) 'generated_by: '\''ExtUtils::MakeMaker version 6.78, CPAN::Meta::Converter version 2.132830'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'license: unknown' >> META_new.yml
 	$(NOECHO) $(ECHO) 'meta-spec:' >> META_new.yml
 	$(NOECHO) $(ECHO) '  url: http://module-build.sourceforge.net/META-spec-v1.4.html' >> META_new.yml
@@ -560,7 +562,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '      "unknown"' >> META_new.json
 	$(NOECHO) $(ECHO) '   ],' >> META_new.json
 	$(NOECHO) $(ECHO) '   "dynamic_config" : 1,' >> META_new.json
-	$(NOECHO) $(ECHO) '   "generated_by" : "ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921",' >> META_new.json
+	$(NOECHO) $(ECHO) '   "generated_by" : "ExtUtils::MakeMaker version 6.78, CPAN::Meta::Converter version 2.132830",' >> META_new.json
 	$(NOECHO) $(ECHO) '   "license" : [' >> META_new.json
 	$(NOECHO) $(ECHO) '      "unknown"' >> META_new.json
 	$(NOECHO) $(ECHO) '   ],' >> META_new.json
@@ -624,7 +626,7 @@ distmeta : create_distdir metafile
 
 # --- MakeMaker distsignature section:
 distsignature : create_distdir
-	$(NOECHO) cd $(DISTVNAME) && $(ABSPERLRUN) -MExtUtils::Manifest=maniadd -e 'eval { maniadd({q{SIGNATURE} => q{Public-key signature (added by MakeMaker)}}) } ' \
+	$(NOECHO) cd $(DISTVNAME) && $(ABSPERLRUN) -MExtUtils::Manifest=maniadd -e 'eval { maniadd({q{SIGNATURE} => q{Public-key signature (added by MakeMaker)}}) }' \
 	  -e '    or print "Could not add SIGNATURE to MANIFEST: $$$${'\''@'\''}\n"' --
 	$(NOECHO) cd $(DISTVNAME) && $(TOUCH) SIGNATURE
 	cd $(DISTVNAME) && cpansign -s
@@ -640,48 +642,78 @@ FORCE :
 
 
 # --- MakeMaker perldepend section:
-
 PERL_HDRS = \
-	$(PERL_INC)/EXTERN.h		\
-	$(PERL_INC)/INTERN.h		\
-	$(PERL_INC)/XSUB.h		\
-	$(PERL_INC)/av.h		\
-	$(PERL_INC)/config.h		\
-	$(PERL_INC)/cop.h		\
-	$(PERL_INC)/cv.h		\
-	$(PERL_INC)/dosish.h		\
-	$(PERL_INC)/embed.h		\
-	$(PERL_INC)/embedvar.h		\
-	$(PERL_INC)/fakethr.h		\
-	$(PERL_INC)/form.h		\
-	$(PERL_INC)/gv.h		\
-	$(PERL_INC)/handy.h		\
-	$(PERL_INC)/hv.h		\
-	$(PERL_INC)/intrpvar.h		\
-	$(PERL_INC)/iperlsys.h		\
-	$(PERL_INC)/keywords.h		\
-	$(PERL_INC)/mg.h		\
-	$(PERL_INC)/nostdio.h		\
-	$(PERL_INC)/op.h		\
-	$(PERL_INC)/opcode.h		\
-	$(PERL_INC)/patchlevel.h	\
-	$(PERL_INC)/perl.h		\
-	$(PERL_INC)/perlio.h		\
-	$(PERL_INC)/perlsdio.h		\
-	$(PERL_INC)/perlsfio.h		\
-	$(PERL_INC)/perlvars.h		\
-	$(PERL_INC)/perly.h		\
-	$(PERL_INC)/pp.h		\
-	$(PERL_INC)/pp_proto.h		\
-	$(PERL_INC)/proto.h		\
-	$(PERL_INC)/regcomp.h		\
-	$(PERL_INC)/regexp.h		\
-	$(PERL_INC)/regnodes.h		\
-	$(PERL_INC)/scope.h		\
-	$(PERL_INC)/sv.h		\
-	$(PERL_INC)/thread.h		\
-	$(PERL_INC)/unixish.h		\
-	$(PERL_INC)/util.h
+        $(PERL_INC)/EXTERN.h            \
+        $(PERL_INC)/INTERN.h            \
+        $(PERL_INC)/XSUB.h            \
+        $(PERL_INC)/av.h            \
+        $(PERL_INC)/bitcount.h            \
+        $(PERL_INC)/charclass_invlists.h            \
+        $(PERL_INC)/config.h            \
+        $(PERL_INC)/cop.h            \
+        $(PERL_INC)/cv.h            \
+        $(PERL_INC)/dosish.h            \
+        $(PERL_INC)/embed.h            \
+        $(PERL_INC)/embedvar.h            \
+        $(PERL_INC)/fakesdio.h            \
+        $(PERL_INC)/fakethr.h            \
+        $(PERL_INC)/feature.h            \
+        $(PERL_INC)/form.h            \
+        $(PERL_INC)/git_version.h            \
+        $(PERL_INC)/gv.h            \
+        $(PERL_INC)/handy.h            \
+        $(PERL_INC)/hv.h            \
+        $(PERL_INC)/hv_func.h            \
+        $(PERL_INC)/inline.h            \
+        $(PERL_INC)/intrpvar.h            \
+        $(PERL_INC)/iperlsys.h            \
+        $(PERL_INC)/keywords.h            \
+        $(PERL_INC)/l1_char_class_tab.h            \
+        $(PERL_INC)/malloc_ctl.h            \
+        $(PERL_INC)/metaconfig.h            \
+        $(PERL_INC)/mg.h            \
+        $(PERL_INC)/mg_data.h            \
+        $(PERL_INC)/mg_raw.h            \
+        $(PERL_INC)/mg_vtable.h            \
+        $(PERL_INC)/mydtrace.h            \
+        $(PERL_INC)/nostdio.h            \
+        $(PERL_INC)/op.h            \
+        $(PERL_INC)/op_reg_common.h            \
+        $(PERL_INC)/opcode.h            \
+        $(PERL_INC)/opnames.h            \
+        $(PERL_INC)/overload.h            \
+        $(PERL_INC)/pad.h            \
+        $(PERL_INC)/parser.h            \
+        $(PERL_INC)/patchlevel.h            \
+        $(PERL_INC)/perl.h            \
+        $(PERL_INC)/perlapi.h            \
+        $(PERL_INC)/perlio.h            \
+        $(PERL_INC)/perliol.h            \
+        $(PERL_INC)/perlsdio.h            \
+        $(PERL_INC)/perlsfio.h            \
+        $(PERL_INC)/perlvars.h            \
+        $(PERL_INC)/perly.h            \
+        $(PERL_INC)/pp.h            \
+        $(PERL_INC)/pp_proto.h            \
+        $(PERL_INC)/proto.h            \
+        $(PERL_INC)/reentr.h            \
+        $(PERL_INC)/regcharclass.h            \
+        $(PERL_INC)/regcomp.h            \
+        $(PERL_INC)/regexp.h            \
+        $(PERL_INC)/regnodes.h            \
+        $(PERL_INC)/scope.h            \
+        $(PERL_INC)/sv.h            \
+        $(PERL_INC)/thread.h            \
+        $(PERL_INC)/time64.h            \
+        $(PERL_INC)/time64_config.h            \
+        $(PERL_INC)/uconfig.h            \
+        $(PERL_INC)/unicode_constants.h            \
+        $(PERL_INC)/unixish.h            \
+        $(PERL_INC)/utf8.h            \
+        $(PERL_INC)/utfebcdic.h            \
+        $(PERL_INC)/util.h            \
+        $(PERL_INC)/uudmap.h            \
+        $(PERL_INC)/warnings.h            
 
 $(OBJECT) : $(PERL_HDRS)
 
@@ -709,7 +741,7 @@ $(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP)
 
 # --- MakeMaker makeaperl section ---
 MAP_TARGET    = ../../perl
-FULLPERL      = /usr/bin/perl5.16.2
+FULLPERL      = /usr/bin/perl5.18.1
 
 
 # --- MakeMaker test section:
@@ -750,7 +782,7 @@ ppd :
 	$(NOECHO) $(ECHO) '    <ABSTRACT></ABSTRACT>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <AUTHOR></AUTHOR>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <IMPLEMENTATION>' >> $(DISTNAME).ppd
-	$(NOECHO) $(ECHO) '        <ARCHITECTURE NAME="x86_64-linux-thread-multi-5.16" />' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <ARCHITECTURE NAME="x86_64-linux-thread-multi-5.18" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <CODEBASE HREF="" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    </IMPLEMENTATION>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '</SOFTPKG>' >> $(DISTNAME).ppd

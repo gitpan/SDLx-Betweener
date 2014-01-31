@@ -4,9 +4,9 @@
       "eilara <ran.eilam@gmail.com>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "ExtUtils::MakeMaker version 6.78, CPAN::Meta::Converter version 2.132830",
    "license" : [
-      "unknown"
+      "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
@@ -34,10 +34,11 @@
          "requires" : {
             "Alien::SDL" : "1.430",
             "Moose" : "2.0402",
-            "SDL" : "2.536"
+            "SDL" : "2.536",
+            "perl" : "5.012"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "0.0101"
+   "version" : "0.0102"
 }

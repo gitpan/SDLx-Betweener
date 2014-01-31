@@ -43,6 +43,7 @@ lib/SDLx/Betweener.pm
 lib/SDLx/Betweener/Seeker.pm
 lib/SDLx/Betweener/Timeline.pm
 lib/SDLx/Betweener/Tween.pm
+LICENSE
 Makefile.PL
 MANIFEST			This list of files
 MANIFEST.SKIP
@@ -133,6 +134,7 @@ src/xs/Seeker.xs
 src/xs/Timeline.xs
 src/xs/Tween.xs
 t/betweener.t
+t/cpan-changes.t
 TODO
 typemap
 META.yml                                 Module YAML meta-data (added by MakeMaker)
