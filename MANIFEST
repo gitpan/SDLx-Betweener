@@ -77,8 +77,6 @@ src/cpp/LinearTweenForm.cpp
 src/cpp/LinearTweenForm.h
 src/cpp/Makefile
 src/cpp/Makefile.PL
-src/cpp/MYMETA.json
-src/cpp/MYMETA.yml
 src/cpp/PathTweenForm.cpp
 src/cpp/PathTweenForm.h
 src/cpp/PolylinePath.cpp
@@ -101,13 +99,9 @@ src/cpp_t/betweener_unit_tests
 src/cpp_t/betweener_unit_tests.cpp
 src/cpp_t/Makefile
 src/cpp_t/Makefile.PL
-src/cpp_t/MYMETA.json
-src/cpp_t/MYMETA.yml
 src/cpp_xs/libbetweenerperl.a
 src/cpp_xs/Makefile
 src/cpp_xs/Makefile.PL
-src/cpp_xs/MYMETA.json
-src/cpp_xs/MYMETA.yml
 src/cpp_xs/PerlBaseCodeProxy.cpp
 src/cpp_xs/PerlBaseCodeProxy.h
 src/cpp_xs/PerlCallbackCompleter.cpp
@@ -127,8 +121,6 @@ src/cpp_xs/PerlPathFactory.h
 src/cpp_xs/PerlProxyFactory.h
 src/Makefile
 src/Makefile.PL
-src/MYMETA.json
-src/MYMETA.yml
 src/pm_to_blib
 src/xs/Seeker.xs
 src/xs/Timeline.xs

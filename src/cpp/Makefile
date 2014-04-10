@@ -1,7 +1,7 @@
 # This Makefile is for the SDLx::Betweener::betweener extension to perl.
 #
 # It was generated automatically by MakeMaker version
-# 6.78 (Revision: 67800) from the contents of
+# 6.94 (Revision: 69400) from the contents of
 # Makefile.PL. Don't edit this file, edit Makefile.PL instead.
 #
 #       ANY CHANGES MADE HERE WILL BE LOST!
@@ -27,12 +27,12 @@
 
 # --- MakeMaker const_config section:
 
-# These definitions are from config.sh (via /usr/lib/perl5/5.18.1/x86_64-linux-thread-multi/Config.pm).
+# These definitions are from config.sh (via /usr/lib/perl5/5.18.2/x86_64-linux-thread-multi/Config.pm).
 # They may have been overridden via Makefile.PL or on the command line.
 AR = ar
 CC = g++
 CCCDLFLAGS = -fPIC
-CCDLFLAGS = -Wl,-E -Wl,-rpath,/usr/lib/perl5/5.18.1/x86_64-linux-thread-multi/CORE
+CCDLFLAGS = -Wl,-E -Wl,-rpath,/usr/lib/perl5/5.18.2/x86_64-linux-thread-multi/CORE
 DLEXT = so
 DLSRC = dl_dlopen.xs
 EXE_EXT = 
@@ -44,13 +44,13 @@ LIBC = /lib/libc-2.18.so
 LIB_EXT = .a
 OBJ_EXT = .o
 OSNAME = linux
-OSVERS = 3.4.52-server-1.mga2
+OSVERS = 3.4.69-server-1.mga2
 RANLIB = :
-SITELIBEXP = /usr/lib/perl5/site_perl/5.18.1
-SITEARCHEXP = /usr/lib/perl5/site_perl/5.18.1/x86_64-linux-thread-multi
+SITELIBEXP = /usr/lib/perl5/site_perl/5.18.2
+SITEARCHEXP = /usr/lib/perl5/site_perl/5.18.2/x86_64-linux-thread-multi
 SO = so
-VENDORARCHEXP = /usr/lib/perl5/vendor_perl/5.18.1/x86_64-linux-thread-multi
-VENDORLIBEXP = /usr/lib/perl5/vendor_perl/5.18.1
+VENDORARCHEXP = /usr/lib/perl5/vendor_perl/5.18.2/x86_64-linux-thread-multi
+VENDORLIBEXP = /usr/lib/perl5/vendor_perl/5.18.2
 
 
 # --- MakeMaker constants section:
@@ -80,17 +80,17 @@ PREFIX = $(SITEPREFIX)
 PERLPREFIX = /usr
 SITEPREFIX = /usr
 VENDORPREFIX = /usr
-INSTALLPRIVLIB = /usr/lib/perl5/5.18.1
+INSTALLPRIVLIB = /usr/lib/perl5/5.18.2
 DESTINSTALLPRIVLIB = $(DESTDIR)$(INSTALLPRIVLIB)
-INSTALLSITELIB = /usr/lib/perl5/site_perl/5.18.1
+INSTALLSITELIB = /usr/lib/perl5/site_perl/5.18.2
 DESTINSTALLSITELIB = $(DESTDIR)$(INSTALLSITELIB)
-INSTALLVENDORLIB = /usr/lib/perl5/vendor_perl/5.18.1
+INSTALLVENDORLIB = /usr/lib/perl5/vendor_perl/5.18.2
 DESTINSTALLVENDORLIB = $(DESTDIR)$(INSTALLVENDORLIB)
-INSTALLARCHLIB = /usr/lib/perl5/5.18.1/x86_64-linux-thread-multi
+INSTALLARCHLIB = /usr/lib/perl5/5.18.2/x86_64-linux-thread-multi
 DESTINSTALLARCHLIB = $(DESTDIR)$(INSTALLARCHLIB)
-INSTALLSITEARCH = /usr/lib/perl5/site_perl/5.18.1/x86_64-linux-thread-multi
+INSTALLSITEARCH = /usr/lib/perl5/site_perl/5.18.2/x86_64-linux-thread-multi
 DESTINSTALLSITEARCH = $(DESTDIR)$(INSTALLSITEARCH)
-INSTALLVENDORARCH = /usr/lib/perl5/vendor_perl/5.18.1/x86_64-linux-thread-multi
+INSTALLVENDORARCH = /usr/lib/perl5/vendor_perl/5.18.2/x86_64-linux-thread-multi
 DESTINSTALLVENDORARCH = $(DESTDIR)$(INSTALLVENDORARCH)
 INSTALLBIN = /usr/bin
 DESTINSTALLBIN = $(DESTDIR)$(INSTALLBIN)
@@ -116,16 +116,16 @@ INSTALLSITEMAN3DIR = /usr/local/share/man/man3
 DESTINSTALLSITEMAN3DIR = $(DESTDIR)$(INSTALLSITEMAN3DIR)
 INSTALLVENDORMAN3DIR = /usr/share/man/man3
 DESTINSTALLVENDORMAN3DIR = $(DESTDIR)$(INSTALLVENDORMAN3DIR)
-PERL_LIB = /usr/lib/perl5/5.18.1
-PERL_ARCHLIB = /usr/lib/perl5/5.18.1/x86_64-linux-thread-multi
+PERL_LIB = /usr/lib/perl5/5.18.2
+PERL_ARCHLIB = /usr/lib/perl5/5.18.2/x86_64-linux-thread-multi
 LIBPERL_A = libperl.a
 FIRST_MAKEFILE = Makefile
 MAKEFILE_OLD = Makefile.old
 MAKE_APERL_FILE = Makefile.aperl
 PERLMAINCC = $(CC)
-PERL_INC = /usr/lib/perl5/5.18.1/x86_64-linux-thread-multi/CORE
-PERL = /usr/bin/perl5.18.1
-FULLPERL = /usr/bin/perl5.18.1
+PERL_INC = /usr/lib/perl5/5.18.2/x86_64-linux-thread-multi/CORE
+PERL = /usr/bin/perl5.18.2
+FULLPERL = /usr/bin/perl5.18.2
 ABSPERL = $(PERL)
 PERLRUN = $(PERL)
 FULLPERLRUN = $(FULLPERL)
@@ -138,9 +138,9 @@ PERM_DIR = 755
 PERM_RW = 644
 PERM_RWX = 755
 
-MAKEMAKER   = /usr/lib/perl5/vendor_perl/5.18.1/ExtUtils/MakeMaker.pm
-MM_VERSION  = 6.78
-MM_REVISION = 67800
+MAKEMAKER   = /usr/lib/perl5/vendor_perl/5.18.2/ExtUtils/MakeMaker.pm
+MM_VERSION  = 6.94
+MM_REVISION = 69400
 
 # FULLEXT = Pathname for extension directory (eg Foo/Bar/Oracle).
 # BASEEXT = Basename part of FULLEXT. May be just equal FULLEXT. (eg Oracle)
@@ -250,7 +250,7 @@ PM_TO_BLIB =
 
 
 # --- MakeMaker platform_constants section:
-MM_Unix_VERSION = 6.78
+MM_Unix_VERSION = 6.94
 PERL_MALLOC_DEF = -DPERL_EXTMALLOC_DEF -Dmalloc=Perl_malloc -Dfree=Perl_mfree -Drealloc=Perl_realloc -Dcalloc=Perl_calloc
 
 
@@ -262,12 +262,12 @@ AUTOSPLITFILE = $(ABSPERLRUN)  -e 'use AutoSplit;  autosplit($$$$ARGV[0], $$$$AR
 
 # --- MakeMaker tool_xsubpp section:
 
-XSUBPPDIR = /usr/lib/perl5/5.18.1/ExtUtils
+XSUBPPDIR = /usr/lib/perl5/5.18.2/ExtUtils
 XSUBPP = $(XSUBPPDIR)$(DFSEP)xsubpp
 XSUBPPRUN = $(PERLRUN) $(XSUBPP)
 XSPROTOARG = 
-XSUBPPDEPS = /usr/lib/perl5/5.18.1/ExtUtils/typemap $(XSUBPP)
-XSUBPPARGS = -typemap /usr/lib/perl5/5.18.1/ExtUtils/typemap
+XSUBPPDEPS = /usr/lib/perl5/5.18.2/ExtUtils/typemap $(XSUBPP)
+XSUBPPARGS = -typemap /usr/lib/perl5/5.18.2/ExtUtils/typemap
 XSUBPP_EXTRA_ARGS =
 
 
@@ -300,6 +300,7 @@ MACROSTART =
 MACROEND = 
 USEMAKEFILE = -f
 FIXIN = $(ABSPERLRUN) -MExtUtils::MY -e 'MY->fixin(shift)' --
+CP_NONEMPTY = $(ABSPERLRUN) -MExtUtils::Command::MM -e 'cp_nonempty' --
 
 
 # --- MakeMaker makemakerdflt section:
@@ -466,8 +467,6 @@ linkext :: $(LINKTYPE)
 # --- MakeMaker dlsyms section:
 
 
-# --- MakeMaker dynamic section skipped.
-
 # --- MakeMaker dynamic_bs section:
 BOOTSTRAP = $(BASEEXT).bs
 
@@ -482,11 +481,8 @@ $(BOOTSTRAP) : $(FIRST_MAKEFILE) $(BOOTDEP) $(INST_ARCHAUTODIR)$(DFSEP).exists
 	$(NOECHO) $(TOUCH) $@
 	$(CHMOD) $(PERM_RW) $@
 
-$(INST_BOOT) : $(BOOTSTRAP) $(INST_ARCHAUTODIR)$(DFSEP).exists
-	$(NOECHO) $(RM_RF) $@
-	- $(CP) $(BOOTSTRAP) $@
-	$(CHMOD) $(PERM_RW) $@
 
+# --- MakeMaker dynamic section skipped.
 
 # --- MakeMaker dynamic_lib section skipped.
 
@@ -559,8 +555,8 @@ realclean_subdirs :
 # Delete temporary files (via clean) and also delete dist files
 realclean purge ::  clean realclean_subdirs
 	- $(RM_F) \
-	  $(MAKEFILE_OLD) $(OBJECT) \
-	  $(FIRST_MAKEFILE) 
+	  $(FIRST_MAKEFILE) $(MAKEFILE_OLD) \
+	  $(OBJECT) 
 	- $(RM_RF) \
 	  $(DISTVNAME) 
 
@@ -573,15 +569,15 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) 'author:' >> META_new.yml
 	$(NOECHO) $(ECHO) '  - unknown' >> META_new.yml
 	$(NOECHO) $(ECHO) 'build_requires:' >> META_new.yml
-	$(NOECHO) $(ECHO) '  ExtUtils::MakeMaker: 0' >> META_new.yml
+	$(NOECHO) $(ECHO) '  ExtUtils::MakeMaker: '\''0'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'configure_requires:' >> META_new.yml
-	$(NOECHO) $(ECHO) '  ExtUtils::MakeMaker: 0' >> META_new.yml
+	$(NOECHO) $(ECHO) '  ExtUtils::MakeMaker: '\''0'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'dynamic_config: 1' >> META_new.yml
-	$(NOECHO) $(ECHO) 'generated_by: '\''ExtUtils::MakeMaker version 6.78, CPAN::Meta::Converter version 2.132830'\''' >> META_new.yml
+	$(NOECHO) $(ECHO) 'generated_by: '\''ExtUtils::MakeMaker version 6.94, CPAN::Meta::Converter version 2.140640'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'license: unknown' >> META_new.yml
 	$(NOECHO) $(ECHO) 'meta-spec:' >> META_new.yml
 	$(NOECHO) $(ECHO) '  url: http://module-build.sourceforge.net/META-spec-v1.4.html' >> META_new.yml
-	$(NOECHO) $(ECHO) '  version: 1.4' >> META_new.yml
+	$(NOECHO) $(ECHO) '  version: '\''1.4'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'name: SDLx-Betweener-betweener' >> META_new.yml
 	$(NOECHO) $(ECHO) 'no_index:' >> META_new.yml
 	$(NOECHO) $(ECHO) '  directory:' >> META_new.yml
@@ -597,7 +593,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '      "unknown"' >> META_new.json
 	$(NOECHO) $(ECHO) '   ],' >> META_new.json
 	$(NOECHO) $(ECHO) '   "dynamic_config" : 1,' >> META_new.json
-	$(NOECHO) $(ECHO) '   "generated_by" : "ExtUtils::MakeMaker version 6.78, CPAN::Meta::Converter version 2.132830",' >> META_new.json
+	$(NOECHO) $(ECHO) '   "generated_by" : "ExtUtils::MakeMaker version 6.94, CPAN::Meta::Converter version 2.140640",' >> META_new.json
 	$(NOECHO) $(ECHO) '   "license" : [' >> META_new.json
 	$(NOECHO) $(ECHO) '      "unknown"' >> META_new.json
 	$(NOECHO) $(ECHO) '   ],' >> META_new.json
@@ -776,7 +772,7 @@ $(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP)
 
 # --- MakeMaker makeaperl section ---
 MAP_TARGET    = ../../perl
-FULLPERL      = /usr/bin/perl5.18.1
+FULLPERL      = /usr/bin/perl5.18.2
 
 
 # --- MakeMaker test section:

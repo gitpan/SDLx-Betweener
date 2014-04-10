@@ -3,23 +3,27 @@ abstract: 'SDL Perl XS Tweening Animation Library'
 author:
   - 'eilara <ran.eilam@gmail.com>'
 build_requires:
-  ExtUtils::MakeMaker: 0
+  ExtUtils::MakeMaker: '0'
 configure_requires:
-  ExtUtils::MakeMaker: 0
+  ExtUtils::MakeMaker: '0'
 dynamic_config: 1
-generated_by: 'ExtUtils::MakeMaker version 6.78, CPAN::Meta::Converter version 2.132830'
+generated_by: 'ExtUtils::MakeMaker version 6.94, CPAN::Meta::Converter version 2.140640'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: SDLx-Betweener
 no_index:
   directory:
     - t
     - inc
+provides:
+  SDLx::Betweener:
+    file: lib/SDLx/Betweener.pm
+    version: '0.0103'
 requires:
-  Alien::SDL: 1.430
-  Moose: 2.0402
-  SDL: 2.536
-  perl: 5.012
-version: 0.0102
+  Alien::SDL: '1.430'
+  Moose: '2.0402'
+  SDL: '2.536'
+  perl: '5.012'
+version: '0.0103'
